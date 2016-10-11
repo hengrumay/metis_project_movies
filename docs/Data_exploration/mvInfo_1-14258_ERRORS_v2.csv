@@ -1,0 +1,3 @@
+,mvID,mvPgURL,ErrType
+0,616,http://www.boxofficemojo.com/movies/?id=coup.htm,<class 'requests.exceptions.ChunkedEncodingError'>
+1,10877,http://www.boxofficemojo.com/movies/?id=unhookthestars.htm,<class 'requests.exceptions.ChunkedEncodingError'>

@@ -1,0 +1,104 @@
+List of Useful References and Links wrt to Movies project
+
+https://en.wikipedia.org/wiki/Academy_Award_for_Best_Picture
+https://en.wikipedia.org/wiki/List_of_Academy_Award-winning_films
+
+
+http://www.telegraph.co.uk/film/what-to-watch/oscars-all-best-picture-winners/
+
+http://m.imdb.com/chart/bestpicture/
+
+http://www.filmsite.org/bestpicsmilestones7.html
+http://www.filmsite.org/bestpicsmilestones8.html
+http://www.filmsite.org/bestpicsmilestones9.html
+http://www.filmsite.org/bestpicsmilestones10.html
+
+https://en.wikipedia.org/wiki/Academy_Awards
+
+http://mentalfloss.com/article/54560/how-are-oscar-nominees-chosen
+
+http://entertainment.howstuffworks.com/oscar3.htm
+
+http://www.economist.com/blogs/economist-explains/2015/01/economist-explains-14
+http://www.economist.com/blogs/prospero/2014/02/oscars
+
+
+https://en.wikipedia.org/wiki/Cam%C3%A9ra_d%27Or
+
+https://en.wikipedia.org/wiki/BAFTA_Award_for_Best_Film
+
+https://en.wikipedia.org/wiki/Category:Lists_of_films_by_award
+
+https://en.wikipedia.org/wiki/Lists_of_films
+
+https://en.wikipedia.org/wiki/Lists_of_American_films
+
+
+http://blogs.reuters.com/mediafile/2013/01/15/golden-globe-films-are-worth-millions-more-than-oscar-winners/
+
+https://en.wikipedia.org/wiki/2015_in_film  *** Awards ?
+https://en.wikipedia.org/wiki/BAFTA_Award_for_Best_Film
+https://en.wikipedia.org/wiki/Academy_Award_for_Best_Picture
+
+
+### http://www.omdbapi.com/
+https://dzone.com/articles/python-101-how-grab-data
+http://wiki.urbanhogfarm.com/index.php/IMDb_%2B_Rotten_Tomatoes
+http://grouplens.org/datasets/hetrec-2011/
+
+
+http://www.the-numbers.com/movie/budgets/
+http://www.the-numbers.com/movie/budgets/all
+http://www.the-numbers.com/movies/#tab=year
+
+
+http://www.boxofficemojo.com/yearly/
+<tbody>
+<tr> ?
+<a href="chart/?yr=2016&amp;p=.htm">2016</a>
+
+get years in list: 1980 -- 2016
+http://www.boxofficemojo.com/yearly/chart/?yr=####&p=.htm
+
+
+http://www.boxofficemojo.com/yearly/chart/?yr=2015&p=.htm
+<h1>2015 DOMESTIC GROSSES</h1>
+url pointing to page is by default #1-100
+<a href="/yearly/chart/?page=2&amp;view=releasedate&amp;view2=domestic&amp;yr=2015&amp;p=.htm">#101–200</a>
+...
+<a href="/yearly/chart/?page=8&amp;view=releasedate&amp;view2=domestic&amp;yr=2015&amp;p=.htm">#701–702</a>
+
+for each chart -- should have max 100 entries with /movies/?id=
+<font size="2">1</font>
+<a href="/movies/?id=starwars7.htm">Star Wars: The Force Awakens</a>
+<a href="/studio/chart/?studio=buenavista.htm">BV</a>
+<b>$936,662,225</b>
+<font size="2">4,134</font>
+<font size="2">$247,966,675</font>
+<font size="2">4,134</font>
+<a href="/schedule/?view=bydate&amp;release=theatrical&amp;date=2015-12-18&amp;p=.htm">12/18</a>
+<font size="2">6/2</font>
+
+
+### http://boxofficequant.com/
+
+
+http://www.boxofficemojo.com/oscar/movies/?id=danishgirl.htm
+http://www.boxofficemojo.com/movies/?id=danishgirl.htm
+
+http://www.the-numbers.com/market/genres
+
+http://visual.ly/complete-list-film-sub-genres
+http://grouplens.org/datasets/movielens/
+
+http://mentalfloss.com/article/68552/20-most-profitable-movies-all-time-based-return-investment
+http://www.businesspundit.com/10-most-profitable-low-budget-movies-of-all-time/
+
+https://www.theguardian.com/film/2004/jun/11/3
+
+http://www.hypable.com/10-block-buster-movies-with-tiny-budgets/
+
+
+http://www.thegeekstuff.com/2014/07/python-regex-examples
+http://pythoncentral.io/how-to-see-if-a-string-contains-another-string-in-python/
+https://www.dotnetperls.com/re-python

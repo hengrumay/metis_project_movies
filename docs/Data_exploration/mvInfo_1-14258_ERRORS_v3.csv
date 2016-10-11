@@ -1,0 +1,2 @@
+,mvID,mvPgURL,ErrType
+0,6154,http://www.boxofficemojo.com/movies/?id=khadak.htm,<class 'requests.exceptions.ChunkedEncodingError'>
