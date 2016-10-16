@@ -156,12 +156,11 @@ mvNamesCheck.to_csv('mvInfo_FuzzyWuzzy_mvNamesCheck_v2.csv')
 mvNamesCheck = pd.read_csv('mvInfo_FuzzyWuzzy_mvNamesCheck_v2.csv')
 # mvNamesCheck.columns
 
-
-Index(['Unnamed: 0', 'budgetListIDX', 'budgetListName', 'bLnameLength',
-       'MvName', 'mvNameLength', 'maxFuzzRatioIDX', 'maxFuzzRatio',
-       'maxFuzzSetRatioIDX', 'maxFuzzSetRatio', 'budgetListMvReleaseYR',
-       'MvReleaseYR'],
-      dtype='object')
+#Index(['Unnamed: 0', 'budgetListIDX', 'budgetListName', 'bLnameLength',
+#       'MvName', 'mvNameLength', 'maxFuzzRatioIDX', 'maxFuzzRatio',
+#       'maxFuzzSetRatioIDX', 'maxFuzzSetRatio', 'budgetListMvReleaseYR',
+#       'MvReleaseYR'],
+#      dtype='object')
 
 nameCheck = mvNamesCheck.drop(['Unnamed: 0'], axis=1)
 # len(nameCheck) #4949
@@ -178,9 +177,10 @@ nameCheckYRFuzzRatio = nameCheckYR[nameCheckYR.maxFuzzRatio >= 80].reset_index()
 nameCheckYRFuzzRatioFuzzSetRatio = nameCheckYRFuzzRatio[nameCheckYRFuzzRatio.maxFuzzSetRatio >= 90]
 maxIDXmatch = nameCheckYRFuzzRatioFuzzSetRatio.maxFuzzRatioIDX == nameCheckYRFuzzRatioFuzzSetRatio.maxFuzzSetRatioIDX
 
+
 IDXmatchMVs = nameCheckYRFuzzRatioFuzzSetRatio[maxIDXmatch.astype(int) == 1]
-# IDXmatchMVs
-# len(IDXmatchMVs)
+IDXmatchMVs['mvInfoIDX']=IDXmatchMVs.maxFuzzRatioIDX#.copy()
+IDXmatchMVs.iloc[:,2:].reset_index()
 
 nonIDXmatchMVs = nameCheckYRFuzzRatioFuzzSetRatio[maxIDXmatch.astype(int) == 0]
 # len(nonIDXmatchMVs) # 92
@@ -338,7 +338,7 @@ GenreList = ['Animation', 'Adventure', 'Action', 'Comedy', 'Drama', 'Documentary
              'Horror', 'Period', 'Sci-Fi', 'Thriller', 'Western', 'Romantic', 'Romance']
 
 ALLgenreList = []
-​
+
 for mi in range(0, len(mvInfo_subset2.Genre)):
     if pd.notnull(mvInfo_subset2['Genre'][mi]):
         genreDict = {}
@@ -378,14 +378,14 @@ genreDF3.to_csv('mvInfo_subset_MatchIDX_genres.csv')
 
 # from collections import Counter
 
-​Counter(mvInfo_subset2.mStudio).most_common(20)
+Counter(mvInfo_subset2.mStudio).most_common(20)
 
 studioList = ['warnerbros', 'universal', 'fox', 'buenavista', 'sony', 'paramount', 'miramax', 'newline',
               'foxsearchlight', 'sonyclassics', 'lionsgate', 'mgm', 'screengems', 'weinsteincompany',
               'focus', 'magnolia', 'ifc', 'wb-newline', 'lions_gate', 'dreamworks']
 
 ALLstudioList = []
-​
+
 for mi in range(0, len(mvInfo_subset2.mStudio)):
     if pd.notnull(mvInfo_subset2['mStudio'][mi]):
         studioDict = {}

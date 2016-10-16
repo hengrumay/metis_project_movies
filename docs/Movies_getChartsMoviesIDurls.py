@@ -11,13 +11,9 @@
 # Python 2 & 3 Compatibility
 from __future__ import print_function, division
 
-# import matplotlib
-# % matplotlib inline
-
 import pandas as pd
 import numpy as np
 import datetime as dt
-# import matplotlib.pyplot as plt
 
 from bs4 import BeautifulSoup
 import requests
@@ -31,7 +27,7 @@ mvYRlist = [str(i) for i in range(2016, 1979, -1)]
 # http://www.boxofficemojo.com/yearly/chart/?yr=2016&p=.htm
 # http://www.boxofficemojo.com/yearly/chart/?yr=####&p=.htm
 # http://www.boxofficemojo.com/yearly/chart/?page=1&view=releasedate&view2=domestic&yr=2016&p=.htm
-​
+
 # ---------------------------------------------------------------------
 ## set up URL for scraping...
 # ---------------------------------------------------------------------
@@ -39,7 +35,7 @@ mvYRlist = [str(i) for i in range(2016, 1979, -1)]
 bomjURL = 'http://www.boxofficemojo.com'
 YRpg1viewerURL = '/yearly/chart/?page=1&view=releasedate&view2=domestic&yr='
 YRpg1endURL = '&p=.htm'
-​YRpg1URLlist = [(bomjURL + YRpg1viewerURL + year + YRpg1endURL) for year in mvYRlist]
+YRpg1URLlist = [(bomjURL + YRpg1viewerURL + year + YRpg1endURL) for year in mvYRlist]
 
 # len(YRpg1URLlist)
 # YRpg1URLlist
@@ -49,7 +45,7 @@ YRpg1endURL = '&p=.htm'
 # ---------------------------------------------------------------------
 pgList = []
 YstartendPages = []
-​
+
 for y in range(0, len(YRpg1URLlist)):
     url = YRpg1URLlist[y]
     # print(url)
@@ -105,8 +101,10 @@ for y in range(0, len(YstartendPages)):
 
     print('Retrieving ' + str(mvChartNrows) + 'rows from: ' + pgList[y])
     pgResp = requests.get(pgList[y])
+    
     if pgResp.status_code == 200:
         chartpgSoup = BeautifulSoup(pgResp.text, 'lxml')
+        
     if int(Year) <= 2001:
         tableInfo = chartpgSoup.find_all('table')[3].find_all('font')[
                     13:(mvChartNrows * 8) + 13]  ## 8 lines for each table columns *N# mvrows on pg
