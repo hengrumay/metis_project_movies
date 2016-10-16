@@ -222,6 +222,9 @@ for n in range(0, len(nonIDXmatchMVs)):
 nonIDXmatchMVs['mvInfoIDX'] = mvInfoIDX
 nonIDXmatchMVs.iloc[:, 2:].reset_index()
 
+# ---------------------------------------------------------------------
+## Combined Matched Indices
+# ---------------------------------------------------------------------
 CombineIDXmatch = pd.concat([IDXmatchMVs.iloc[:, 2:].reset_index(), nonIDXmatchMVs.iloc[:, 2:].reset_index()], axis=0)
 
 CombineIDXmatch1 = CombineIDXmatch.sort_values(by=['budgetListIDX']).reset_index().iloc[:, 2:]
