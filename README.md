@@ -8,4 +8,4 @@ Initial webscraping for list of [movie IDs e.g. ] (http://www.boxofficemojo.com/
 
 Exploratory and regression modelling analyses are performed with [`Movies_exploreModels_revised.ipynb`] (https://github.com/hengrumay/metis_project_movies/blob/master/docs/Movies_exploreModels_revised.ipynb)
 
-Summary of findings can be found in [here] (https://github.com/hengrumay/metis_project_movies/blob/master/docs/HRM-Tan_MovieGenreNStudio_presentation.pdf)
+Summary of findings can be found in [here] (https://github.com/hengrumay/metis_project_movies/blob/master/docs/HRM-Merkle-Tan_MovieGenreNStudio_presentation.pdf)
