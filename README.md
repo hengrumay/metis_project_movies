@@ -1,5 +1,6 @@
 
-## metis_project_movies repository
+## Movie ROI -- How are Movie Genre and Studio related to a movie's ROI?
+This project explored how a movie's genre and its production studio are related to its return on investment (ROI).
 
 #### Description of Script Files:   
 Initial webscraping for list of [movie IDs e.g. ](http://www.boxofficemojo.com/yearly/chart/?yr=2016&p=.htm) from [1980--2016](http://www.boxofficemojo.com/yearly/)  was performed with [`Movies_getChartsMoviesIDurls.py`](https://github.com/hengrumay/metis_project_movies/blob/master/docs/Movies_getChartsMoviesIDurls.py) for subsequent scraping of individual movie info with [`Movies_getIndvMovieInfo.py`](https://github.com/hengrumay/metis_project_movies/blob/master/docs/Movies_getIndvMovieInfo.py). 
