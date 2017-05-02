@@ -1,5 +1,5 @@
 
-## Movie ROI -- How are Movie Genres and Studios related to a movie's ROI?
+## Movie ROI -- How are Movie Genres and Studios related to movies' ROI?
 This project explored how a movie's genre and its production studio are related to its return on investment (ROI).
 
 #### Description of Script Files:   
